@@ -15,7 +15,7 @@ def analyze_sentiment(text):
 
 def process_csv(csv_file):
     try:
-        df = pd.read_csv(csv_file)
+        df = pd.read_csv(csv_file,encoding='unicode_escape')
         if 'text' not in df.columns:
             print("Error: 'text' column not found in the CSV file.")
             return
@@ -43,7 +43,7 @@ if __name__ == "__main__":
         sentiment = analyze_sentiment(text)
         print(f"Text: {text}\nSentiment: {sentiment}\n---")     
     elif choice == "2":
-        process_csv("./test.csv")
+        process_csv("./train.csv")
     else:
         print("Invalid choice. Please enter 1 or 2.")
     
