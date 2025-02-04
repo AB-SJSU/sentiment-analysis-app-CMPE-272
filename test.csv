@@ -1,0 +1,7 @@
+text,expected_sentiment
+This is awesome!,Positive
+I feel terrible.,Negative
+The sky is blue.,Neutral
+This is really great,Positive
+This is extremely bad,Negative
+This is more or less average,Neutral
